@@ -28,9 +28,10 @@ cancer = load_breast_cancer()
 
 # Preprocess
 df_feat = pd.DataFrame(cancer['data'], columns=cancer['feature_names'])
+df_target = pd.DataFrame(cancer['target'], columns=["Cancer"])
 print(df_feat.head())
 # print(df_feat.info())
-df_target = pd.DataFrame(cancer['target'], columns=["Cancer"])
+print('------------------------------------------------------------------------\n')
 
 X_train, X_test, y_train, y_test = train_test_split(df_feat, np.ravel(df_target), test_size=0.30, random_state=101)
 
