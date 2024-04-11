@@ -1,5 +1,8 @@
-//: ## Language Recognizor
+//: # Natural Language Framewok
+
 import NaturalLanguage
+
+//: ## Language Recognizor
 
 //let message = "אין עשן בלי אש"
 //let message = "Ich wünsche dir einen guten Morgen!"
@@ -37,3 +40,6 @@ tagger.enumerateTags(in: message.startIndex..<message.endIndex,
     
     return true
 }
+
+//: ## References
+//: - [Apple Documentation - Natural Language](https://developer.apple.com/documentation/naturallanguage)
